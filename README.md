@@ -26,3 +26,5 @@ Description of other targets listed below:
 Some other nifty things can appear in this repo later:
 
 * [ ] clojars deployment
+* [ ] cljs build example
+* [ ] figwheel example
