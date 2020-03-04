@@ -21,7 +21,7 @@ repl:
 	clj -A:test
 
 nrepl:
-	clj -A:test:nrepl
+	clojure -A:test:nrepl -m nrepl.cmdline --middleware '["refactor-nrepl.middleware/wrap-refactor" "cider.nrepl/cider-middleware"]'
 
 test:
 	clj -A:test:runner
