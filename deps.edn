@@ -9,11 +9,11 @@
     refactor-nrepl/refactor-nrepl {:mvn/version "2.5.0-SNAPSHOT"}}}
 
   :server
-  {:extra-paths ["src/app/server"]      ; directory structure is experimental
+  {:extra-paths ["src/clj"]      ; directory structure is experimental
    }
 
   :ui
-  {:extra-paths ["src/app/ui"]
+  {:extra-paths ["src/cljs"]
    :extra-deps
    {re-frame {:mvn/version "0.11.0"}}}
 
