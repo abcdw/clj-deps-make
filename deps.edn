@@ -1,4 +1,4 @@
-{:paths ["src"]
+{:paths []
  :deps  {org.clojure/clojure {:mvn/version "1.10.0"}}
 
  :aliases
@@ -8,8 +8,12 @@
     cider/cider-nrepl             {:mvn/version "0.22.4"}
     refactor-nrepl/refactor-nrepl {:mvn/version "2.5.0-SNAPSHOT"}}}
 
+  :server
+  {:extra-paths ["src/app/server"]      ; directory structure is experimental
+   }
+
   :ui
-  {:extra-paths ["src/ui"]
+  {:extra-paths ["src/app/ui"]
    :extra-deps
    {re-frame {:mvn/version "0.11.0"}}}
 
@@ -22,9 +26,9 @@
   :uberjar
   {:extra-deps {pack/pack.alpha {:git/url "https://github.com/juxt/pack.alpha.git"
                                  :sha     "595388c5b909759445a92a19192df50e427aa9a5"}}
-   :main-opts  ["-m" "mach.pack.alpha.capsule" "target/uberjar.jar" "-m" "clj-deps-make"]}
+   :main-opts  ["-m" "mach.pack.alpha.capsule" "target/uberjar.jar" "-m" "app.server.core"]}
 
-  :run {:main-opts ["-m" "clj-deps-make"]}
+  :run {:main-opts ["-m" "app.server.core"]}
 
   :test-runner
   {:extra-deps

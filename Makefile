@@ -4,13 +4,13 @@ clean:
 	rm -rf target/
 
 server/uberjar:
-	clojure -A:uberjar
+	clojure -A:server:uberjar
 
 server/nrepl:
-	clojure -A:test:nrepl -m nrepl.cmdline --middleware '["refactor-nrepl.middleware/wrap-refactor" "cider.nrepl/cider-middleware"]'
+	clojure -A:server:test:nrepl -m nrepl.cmdline --middleware '["refactor-nrepl.middleware/wrap-refactor" "cider.nrepl/cider-middleware"]'
 
 server/test:
-	clojure -A:test:test-runner
+	clojure -A:server:test:test-runner
 
 
 ui/watch:
