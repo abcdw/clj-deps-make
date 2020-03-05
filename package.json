@@ -1,0 +1,27 @@
+{
+  "name": "clj-deps-make",
+  "version": "1.0.0",
+  "description": "* clj-deps-make",
+  "main": "index.js",
+  "dependencies": {
+    "postcss-cli": "^7.1.0",
+    "react": "^16.9.0",
+    "react-dom": "^16.9.0",
+    "shadow-cljs": "^2.8.90",
+    "tailwindcss": "^1.2.0"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/abcdw/clj-deps-make.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/abcdw/clj-deps-make/issues"
+  },
+  "homepage": "https://github.com/abcdw/clj-deps-make#readme"
+}
