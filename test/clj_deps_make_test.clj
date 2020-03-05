@@ -1,10 +1,10 @@
 (ns clj-deps-make-test
   (:require [clj-deps-make :as sut]
-            [clojure.test :as t]))
+            [clojure.test :refer :all]))
 
-(t/deftest sample-true-test
-  (t/is true)
-  (t/is true))
+(deftest sample-true-test
+  (is true)
+  (is true))
 
-(t/deftest additional-true-test
-  (t/is true))
+(deftest additional-true-test
+  (is true))
