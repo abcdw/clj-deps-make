@@ -1,5 +1,16 @@
-;; shadow-cljs configuration
 {:deps {:aliases [:ui :ui-dev :nrepl]}
 
  :builds
- {}}
+ {:app {:target     :browser
+        :output-dir "resources/public/js/compiled"
+        :asset-path "/js/compiled"
+        :compiler-options
+        {:closure-defines
+         {"re_frame.trace.trace_enabled_QMARK_" true}}
+
+        :devtools
+        {:http-root "resources/public/"
+         :http-port 3449}
+        :modules {:dev {:entries [app.ui.core]
+                        ;; :init-fn app.ui.core/init!
+                        }}}}}

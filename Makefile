@@ -14,4 +14,4 @@ server/test:
 
 
 ui/watch:
-	npx shadow-cljs watch :app
+	npx shadow-cljs watch :dev
