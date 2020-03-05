@@ -1,28 +1,29 @@
 * clj-deps-make
 
-Example usage of GNU Make with clojure cli and deps.edn
+Example usage of GNU Make with shadow-cljs, clojure cli and deps.edn
 
 ** Supported features
 
-Clone the repo and execute `make run`, "hello world" should be printed.
+Run ~make~ with some target.
 
-Description of other targets listed below:
-
-| Target  | Description                                      |
-| :---    | :---                                             |
-| uberjar | Build uberjar and save it to target/             |
-| clean   | Clean up all build artifacts                     |
-| test    | Run all project tests                            |
-| nrepl   | Run nrepl with cider middlewares and spyscope    |
+| Target         | Description                                   |
+|----------------+-----------------------------------------------|
+| server/uberjar | Build uberjar and save it to target/          |
+| server/test    | Run all project tests                         |
+| server/nrepl   | Run nrepl with cider middlewares and spyscope |
+| ui/watch       | Run shadow-cljs watch                         |
+| clean          | Clean up all build artifacts                  |
 
 * Prerequisite
 
-[clojure](https://clojure.org/guides/getting_started) and [make](https://www.gnu.org/software/make/)
+[[https://clojure.org/guides/getting_started][clojure]], [[https://www.npmjs.com/][npm]] and [[https://www.gnu.org/software/make/][make]]
+
+shell.nix contains all necessary packages.
 
 * TBD
 
 Some other nifty things can appear in this repo later:
 
-** [ ] clojars deployment
-** [ ] cljs build example
-** [ ] figwheel example
+- [ ] cljs build example
+- [ ] shadow-cljs example
+- [ ] clojars deployment
