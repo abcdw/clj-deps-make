@@ -5,12 +5,12 @@
  {:nrepl
   {:extra-deps
    {nrepl                         {:mvn/version "0.6.0"}
-    cider/cider-nrepl             {:mvn/version "0.22.4"}
-    refactor-nrepl/refactor-nrepl {:mvn/version "2.5.0-SNAPSHOT"}}}
+    hashp                         {:mvn/version "0.1.1"}
+    cider/cider-nrepl             {:mvn/version "0.25.0-SNAPSHOT"}
+    refactor-nrepl/refactor-nrepl {:mvn/version "2.5.0"}}}
 
   :server
-  {:extra-paths ["src/clj"]      ; directory structure is experimental
-   }
+  {:extra-paths ["src/clj"]}
 
   :ui
   {:extra-paths ["src/cljs"]
